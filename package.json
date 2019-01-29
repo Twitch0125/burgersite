@@ -1,0 +1,25 @@
+{
+  "name": "burgersite",
+  "version": "1.0.0",
+  "description": "burgersite",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twitch0125/burgersite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Twitch0125/burgersite/issues"
+  },
+  "homepage": "https://github.com/Twitch0125/burgersite#readme"
+}
