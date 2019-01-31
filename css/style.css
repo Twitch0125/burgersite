@@ -24,6 +24,16 @@ body {
     .container .top .topnav {
       display: flex;
       flex-flow: row; }
+  .container .center {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto; }
+    .container .center .imagetext {
+      height: 100%;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 4em; }
 
 .center {
   width: 80%;

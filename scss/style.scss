@@ -2,7 +2,8 @@ $myWidth: 80%;
 $myBackgroundColor: #dadfea;
 
 @import 'parallax';
-@mixin myParallax($image, $width){
+
+@mixin myParallax($image, $width) {
     background-image: url($image);
     width: $width;
     height: $width;
@@ -27,7 +28,7 @@ body {
         flex-direction: column;
         margin: auto;
 
-        .logo{
+        .logo {
             display: flex;
             // background-image: url('../images/rockeyburgers02-logo.png');
             // background-size: cover;
@@ -39,26 +40,44 @@ body {
             display: flex;
             flex-flow: row;
 
-            .navlist{
-
-            }
+            .navlist {}
         }
 
     }
 
+    .center {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+
+
+        .imagetext {
+            height: 100%;
+            color: rgba($color: #ffffff, $alpha: .750);
+            font-size: 4em;
+
+        }
+    }
+
+
+
 }
 
-.center{
+.center {
     width: $myWidth;
     background-color: $myBackgroundColor;
 }
 
-.bottom{
+.bottom {
     width: $myWidth;
     background-color: $myBackgroundColor;
 }
 
- .parallax{@include myParallax('../images/burger-hero.jpg', 80%)}
+.parallax {
+    @include myParallax('../images/burger-hero.jpg', 80%);
+}
 
 // .parallax{
 //     background-image: url('../images/burger-hero.jpg');
