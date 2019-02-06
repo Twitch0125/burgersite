@@ -1,17 +1,11 @@
 .navbar-brand img {
-  width: 100px;
-}
+  width: 100px; }
 
-
-.my-container {
+.mycontainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; }
 
-
-
-}
-
-.myhero-img {
+.myheroimg {
   background-image: url(../images/burger-hero.jpg);
   width: 100%;
   height: 400px;
@@ -21,24 +15,13 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.myhero-header {
-  color: #ffffff;
-
-}
-
-.myhero-header h3 {
-  /* text-align: center; */
-  font-size: 4em;
-  color: #ffb700e6;
-
-
-
-}
-
-.myhero-header p {
-  font-size: 1.5em;
-  /* text-align: center; */
-}
+  align-items: center; }
+  .myheroimg .myheroheader {
+    color: #ffffff; }
+    .myheroimg .myheroheader h3 {
+      /* text-align: center; */
+      font-size: 4em;
+      color: #ffb700e6; }
+      .myheroimg .myheroheader h3 p {
+        font-size: 1.5em;
+        /* text-align: center; */ }
