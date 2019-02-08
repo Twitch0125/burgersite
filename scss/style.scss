@@ -1,3 +1,6 @@
+$textFont: 'Arvo', serif;
+$bodyFont: 'Quattrocento Sans', sans-serif;
+
 body {
     // background: linear-gradient(to bottom, #ebe9f9 0%, #d8d0ef 50%, #cec7ec 51%, #c1bfea 100%);
     background-image: url(../images/burger-hero.jpg);
@@ -6,21 +9,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    font-family: $textFont;
+    
 }
 
 .container {
     background-color: #ffffff;
-}
-
-.navbar-brand img {
-    width: 100px;
-}
-
-
-.mycontainer {
-    display: flex;
-    flex-direction: column;
-
 }
 
 .mylogo {
@@ -28,6 +22,41 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+ul {
+    font-family: $bodyFont;
+    $border: 1px #f1a536 solid;
+    .nav-item:first-child {
+        
+        border: $border;
+        border-right: 0px;
+    }
+    .nav-item{
+        border:$border;
+        border-left: 0px;
+        border-right: 0px;
+        .nav-link{
+            color: black;
+        }
+
+    }
+    .nav-item:last-child{
+        border:$border;
+        border-left: 0px;
+    }
+
+    .nav-item:hover{
+        background-color: #f1a536;
+       .nav-link{
+           color: white;
+       } 
+    }
+
+}
+
+
+
+
 
 .myheroimg {
     //  background-image: url(../images/burger-hero.jpg);
@@ -58,22 +87,99 @@ body {
 }
 
 .carousel {
-    width: 100%;
-    // max-height: 300px;
-    height: 50%;
+    $slideBackgroundSize: cover;
+    $textHeadColor: #f1a536;
+    $textBodyColor: #ffe4bc;
+    
+    padding-bottom: 15px;
+    font-family: $textFont;
 
-    .carousel-inner {
+    .carousel-item {
         width: 100%;
-        height: 100%;
+        height: 450px;
 
-        .carousel-item {
-            width: 100%;
-            height: 100%;
-            .myCarouselImg {
-                width: 100%;
-                height: 100%;
-                background-position: bottom;
-            }
+        .slide-heading {
+            color: $textHeadColor;
+            font-size: 3.25em;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+
+        .slide-subheading {
+            color: $textBodyColor;
+            font-size: 1.5em;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .myslide1 {
+        background: url(../images/burger-alone.jpg);
+        background-size: $slideBackgroundSize;
+        background-position: center;
+        $customPadding: 45px;
+
+        .slide-heading {
+            text-align: left;
+            width: 50%;
+            padding-left: $customPadding;
+            text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6);
+        }
+
+        .slide-subheading {
+            text-align: left;
+            width: 50%;
+            padding-left: $customPadding;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+            // font-family: $bodyFont;
+        }
+    }
+
+    .myslide2 {
+        background: url(../images/man-holding-burger.jpg);
+        background-size: $slideBackgroundSize;
+        background-position: 0% 70%;
+
+        .slide-heading {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            font-weight: bold;
+            // color: #ffd876e6;
+            color: #ffd876ed;
+            letter-spacing: 1px;
+            text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6);
+        }
+
+        .slide-subheading {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+
+
+        }
+    }
+
+    .myslide3 {
+        background: url(../images/kids-meal.jpg);
+        background-size: $slideBackgroundSize;
+        background-position: center;
+
+        .slide-heading {
+            float: right;
+            width: 75%;
+            text-align: left;
+            text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6);
+        }
+
+        .slide-subheading {
+            float: right;
+            width: 75%;
+            text-align: left;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+
         }
     }
 }

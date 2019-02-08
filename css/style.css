@@ -4,22 +4,35 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1; }
+  z-index: -1;
+  font-family: "Arvo", serif; }
 
 .container {
   background-color: #ffffff; }
-
-.navbar-brand img {
-  width: 100px; }
-
-.mycontainer {
-  display: flex;
-  flex-direction: column; }
 
 .mylogo {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+ul {
+  font-family: "Quattrocento Sans", sans-serif; }
+  ul .nav-item:first-child {
+    border: 1px #f1a536 solid;
+    border-right: 0px; }
+  ul .nav-item {
+    border: 1px #f1a536 solid;
+    border-left: 0px;
+    border-right: 0px; }
+    ul .nav-item .nav-link {
+      color: black; }
+  ul .nav-item:last-child {
+    border: 1px #f1a536 solid;
+    border-left: 0px; }
+  ul .nav-item:hover {
+    background-color: #f1a536; }
+    ul .nav-item:hover .nav-link {
+      color: white; }
 
 .myheroimg {
   width: 100%;
@@ -42,15 +55,62 @@ body {
         /* text-align: center; */ }
 
 .carousel {
-  width: 100%;
-  height: 50%; }
-  .carousel .carousel-inner {
+  padding-bottom: 15px;
+  font-family: "Arvo", serif; }
+  .carousel .carousel-item {
     width: 100%;
-    height: 100%; }
-    .carousel .carousel-inner .carousel-item {
-      width: 100%;
-      height: 100%; }
-      .carousel .carousel-inner .carousel-item .myCarouselImg {
-        width: 100%;
-        height: 100%;
-        background-position: bottom; }
+    height: 450px; }
+    .carousel .carousel-item .slide-heading {
+      color: #f1a536;
+      font-size: 3.25em;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .carousel .carousel-item .slide-subheading {
+      color: #ffe4bc;
+      font-size: 1.5em;
+      text-transform: capitalize; }
+  .carousel .myslide1 {
+    background: url(../images/burger-alone.jpg);
+    background-size: cover;
+    background-position: center; }
+    .carousel .myslide1 .slide-heading {
+      text-align: left;
+      width: 50%;
+      padding-left: 45px;
+      text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6); }
+    .carousel .myslide1 .slide-subheading {
+      text-align: left;
+      width: 50%;
+      padding-left: 45px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); }
+  .carousel .myslide2 {
+    background: url(../images/man-holding-burger.jpg);
+    background-size: cover;
+    background-position: 0% 70%; }
+    .carousel .myslide2 .slide-heading {
+      width: 85%;
+      margin: auto;
+      text-align: left;
+      font-weight: bold;
+      color: #ffd876ed;
+      letter-spacing: 1px;
+      text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6); }
+    .carousel .myslide2 .slide-subheading {
+      width: 85%;
+      margin: auto;
+      text-align: left;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); }
+  .carousel .myslide3 {
+    background: url(../images/kids-meal.jpg);
+    background-size: cover;
+    background-position: center; }
+    .carousel .myslide3 .slide-heading {
+      float: right;
+      width: 75%;
+      text-align: left;
+      text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6); }
+    .carousel .myslide3 .slide-subheading {
+      float: right;
+      width: 75%;
+      text-align: left;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); }
