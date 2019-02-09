@@ -18,21 +18,24 @@ body {
 ul {
   font-family: "Quattrocento Sans", sans-serif; }
   ul .nav-item:first-child {
-    border: 1px #f1a536 solid;
+    border: 2px #f1a536 solid;
     border-right: 0px; }
   ul .nav-item {
-    border: 1px #f1a536 solid;
+    border: 2px #f1a536 solid;
     border-left: 0px;
     border-right: 0px; }
     ul .nav-item .nav-link {
       color: black; }
   ul .nav-item:last-child {
-    border: 1px #f1a536 solid;
+    border: 2px #f1a536 solid;
     border-left: 0px; }
   ul .nav-item:hover {
     background-color: #f1a536; }
     ul .nav-item:hover .nav-link {
       color: white; }
+
+.collapse {
+  justify-content: center; }
 
 .myheroimg {
   width: 100%;
@@ -114,3 +117,21 @@ ul {
       width: 75%;
       text-align: left;
       text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); }
+
+.mydescription {
+  display: flex;
+  flex-direction: row; }
+  .mydescription .mycontainer {
+    padding-left: 2px; }
+    .mydescription .mycontainer .myicon {
+      padding-bottom: 5px;
+      width: 30%;
+      margin: auto; }
+      .mydescription .mycontainer .myicon img {
+        width: 100px; }
+
+.text-area {
+  border-top: 2px #f1a536 solid;
+  font-family: "Quattrocento Sans", sans-serif;
+  padding-bottom: 5px;
+  text-align: center; }

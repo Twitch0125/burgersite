@@ -1,5 +1,7 @@
-$textFont: 'Arvo', serif;
-$bodyFont: 'Quattrocento Sans', sans-serif;
+$textFont: 'Arvo',
+serif;
+$bodyFont: 'Quattrocento Sans',
+sans-serif;
 
 body {
     // background: linear-gradient(to bottom, #ebe9f9 0%, #d8d0ef 50%, #cec7ec 51%, #c1bfea 100%);
@@ -10,7 +12,7 @@ body {
     background-size: cover;
     z-index: -1;
     font-family: $textFont;
-    
+
 }
 
 .container {
@@ -25,33 +27,41 @@ body {
 
 ul {
     font-family: $bodyFont;
-    $border: 1px #f1a536 solid;
+    $border: 2px #f1a536 solid;
+
     .nav-item:first-child {
-        
+
         border: $border;
         border-right: 0px;
     }
-    .nav-item{
-        border:$border;
+
+    .nav-item {
+        border: $border;
         border-left: 0px;
         border-right: 0px;
-        .nav-link{
+
+        .nav-link {
             color: black;
         }
 
     }
-    .nav-item:last-child{
-        border:$border;
+
+    .nav-item:last-child {
+        border: $border;
         border-left: 0px;
     }
 
-    .nav-item:hover{
+    .nav-item:hover {
         background-color: #f1a536;
-       .nav-link{
-           color: white;
-       } 
-    }
 
+        .nav-link {
+            color: white;
+        }
+    }
+}
+
+.collapse {
+    justify-content: center;
 }
 
 
@@ -90,7 +100,7 @@ ul {
     $slideBackgroundSize: cover;
     $textHeadColor: #f1a536;
     $textBodyColor: #ffe4bc;
-    
+
     padding-bottom: 15px;
     font-family: $textFont;
 
@@ -182,4 +192,35 @@ ul {
 
         }
     }
+}
+
+.mydescription {
+    display: flex;
+    flex-direction: row;
+    
+    .mycontainer {
+        padding-left: 2px;
+
+        .myicon {
+            padding-bottom: 5px;
+            width: 30%;
+            margin: auto;
+            
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.text-area {
+    border-top: 2px #f1a536 solid;
+    font-family: $bodyFont;
+    padding-bottom: 5px;
+    text-align: center;
 }
