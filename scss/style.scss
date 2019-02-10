@@ -290,3 +290,15 @@ footer {
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .slide-subheading{
+        display: none;
+    }
+    body{
+        background-image: url("");
+    }
+    .mydescription{
+        flex-direction: column;
+    }
+}
