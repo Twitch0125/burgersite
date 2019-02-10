@@ -8,7 +8,8 @@ body {
   font-family: "Arvo", serif; }
 
 .container {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-family: "Arvo", serif; }
 
 .mylogo {
   display: flex;
@@ -16,7 +17,7 @@ body {
   align-items: center; }
 
 ul {
-  font-family: "Quattrocento Sans", sans-serif; }
+  font-family: "Arvo", serif; }
   ul .nav-item:first-child {
     border: 2px #f1a536 solid;
     border-right: 0px; }
@@ -36,26 +37,6 @@ ul {
 
 .collapse {
   justify-content: center; }
-
-.myheroimg {
-  width: 100%;
-  height: 400px;
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .myheroimg .myheroheader {
-    color: #ffffff; }
-    .myheroimg .myheroheader h3 {
-      /* text-align: center; */
-      font-size: 4em;
-      color: #ffb700e6; }
-      .myheroimg .myheroheader h3 p {
-        font-size: 1.5em;
-        /* text-align: center; */ }
 
 .carousel {
   padding-bottom: 15px;
@@ -135,3 +116,62 @@ ul {
   font-family: "Quattrocento Sans", sans-serif;
   padding-bottom: 5px;
   text-align: center; }
+
+.menu {
+  font-family: "Arvo", serif;
+  padding-top: 5%; }
+
+.container.menu {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.food {
+  display: flex;
+  align-items: center;
+  padding: 20px 0; }
+
+.price {
+  text-align: center; }
+
+.col h1 {
+  text-align: center;
+  color: #f1a536; }
+
+.menu {
+  margin: auto; }
+
+.fadeIn {
+  animation: .75s ease-in 0s 1 fadeIn; }
+
+.video {
+  font-size: 3em;
+  color: #f1a536;
+  width: 100%; }
+  .video p {
+    font-size: .2em; }
+  .video iframe {
+    width: inherit;
+    margin: auto; }
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px; }
+
+footer .container {
+  background-color: #f1a536;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center; }
+  footer .container p {
+    display: inline;
+    font-family: "Arvo", serif; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

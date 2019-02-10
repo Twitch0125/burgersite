@@ -17,6 +17,7 @@ body {
 
 .container {
     background-color: #ffffff;
+    font-family: $textFont;
 }
 
 .mylogo {
@@ -26,7 +27,7 @@ body {
 }
 
 ul {
-    font-family: $bodyFont;
+    font-family: $textFont;
     $border: 2px #f1a536 solid;
 
     .nav-item:first-child {
@@ -68,33 +69,7 @@ ul {
 
 
 
-.myheroimg {
-    //  background-image: url(../images/burger-hero.jpg);
-    width: 100%;
-    height: 400px;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .myheroheader {
-        color: #ffffff;
-
-        h3 {
-            /* text-align: center; */
-            font-size: 4em;
-            color: #ffb700e6;
-
-            p {
-                font-size: 1.5em;
-                /* text-align: center; */
-            }
-        }
-    }
-}
 
 .carousel {
     $slideBackgroundSize: cover;
@@ -197,7 +172,7 @@ ul {
 .mydescription {
     display: flex;
     flex-direction: row;
-    
+
     .mycontainer {
         padding-left: 2px;
 
@@ -205,7 +180,7 @@ ul {
             padding-bottom: 5px;
             width: 30%;
             margin: auto;
-            
+
 
             img {
                 width: 100px;
@@ -214,13 +189,100 @@ ul {
     }
 }
 
-
-
-
-
 .text-area {
     border-top: 2px #f1a536 solid;
     font-family: $bodyFont;
     padding-bottom: 5px;
     text-align: center;
+}
+
+.menu {
+    font-family: $textFont;
+    padding-top: 5%;
+
+}
+
+.container.menu {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+
+
+}
+
+.price {
+    text-align: center;
+}
+
+.col {
+    // margin-left: 10em;
+
+    h1 {
+        text-align: center;
+        color: #f1a536;
+    }
+
+}
+
+.menu {
+    margin: auto;
+
+}
+
+.fadeIn {
+    animation: .75s ease-in 0s 1 fadeIn;
+}
+
+.video {
+    font-size: 3em;
+    color: #f1a536;
+    width: 100%;
+
+    p {
+        font-size: .2em;
+    }
+
+    iframe {
+        width: inherit;
+        margin: auto;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+footer {
+    .container {
+        background-color: #f1a536;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        p{
+            display: inline;
+            font-family: $textFont;
+        }
+    }
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
