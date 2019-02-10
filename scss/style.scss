@@ -1,6 +1,6 @@
 $textFont: 'Arvo',
 serif;
-$bodyFont: 'Quattrocento Sans',
+$bodyFont: 'Arvo',
 sans-serif;
 
 body {
@@ -263,6 +263,11 @@ ul {
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
+    iframe{
+        width: 250px;
+        height: 50%;
+        border:0;
+    }
 }
 
 footer {
@@ -272,7 +277,7 @@ footer {
         display: flex;
         justify-content: space-between;
         justify-items: center;
-        p{
+        a{
             display: inline;
             font-family: $textFont;
         }

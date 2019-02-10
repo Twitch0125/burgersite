@@ -116,7 +116,7 @@ ul {
 
 .text-area {
   border-top: 2px #f1a536 solid;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Arvo", sans-serif;
   padding-bottom: 5px;
   text-align: center; }
 
@@ -162,6 +162,10 @@ ul {
   text-align: center;
   padding-bottom: 25px;
   padding-top: 25px; }
+  .card-container iframe {
+    width: 250px;
+    height: 50%;
+    border: 0; }
 
 footer .container {
   background-color: #f1a536;
@@ -169,7 +173,7 @@ footer .container {
   display: flex;
   justify-content: space-between;
   justify-items: center; }
-  footer .container p {
+  footer .container a {
     display: inline;
     font-family: "Arvo", serif; }
 
