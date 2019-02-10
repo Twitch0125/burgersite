@@ -1,85 +1,288 @@
-$myWidth: 80%;
-$myBackgroundColor: #dadfea;
+$textFont: 'Arvo',
+serif;
+$bodyFont: 'Quattrocento Sans',
+sans-serif;
 
-@import 'parallax';
-
-@mixin myParallax($image, $width) {
-    background-image: url($image);
-    width: $width;
-    height: $width;
-}
-
-html,
 body {
-    width: 100%;
-    height: 100%;
+    // background: linear-gradient(to bottom, #ebe9f9 0%, #d8d0ef 50%, #cec7ec 51%, #c1bfea 100%);
+    background-image: url(../images/burger-hero.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    font-family: $textFont;
+
 }
 
 .container {
+    background-color: #ffffff;
+    font-family: $textFont;
+}
+
+.mylogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    font-family: $textFont;
+    $border: 2px #f1a536 solid;
+
+    .nav-item:first-child {
+
+        border: $border;
+        border-right: 0px;
+    }
+
+    .nav-item {
+        border: $border;
+        border-left: 0px;
+        border-right: 0px;
+
+        .nav-link {
+            color: black;
+        }
+
+    }
+
+    .nav-item:last-child {
+        border: $border;
+        border-left: 0px;
+    }
+
+    .nav-item:hover {
+        background-color: #f1a536;
+
+        .nav-link {
+            color: white;
+        }
+    }
+}
+
+.collapse {
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.carousel {
+    $slideBackgroundSize: cover;
+    $textHeadColor: #f1a536;
+    $textBodyColor: #ffe4bc;
+
+    padding-bottom: 15px;
+    font-family: $textFont;
+
+    .carousel-item {
+        width: 100%;
+        height: 450px;
+
+        .slide-heading {
+            color: $textHeadColor;
+            font-size: 3.25em;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+
+        .slide-subheading {
+            color: $textBodyColor;
+            font-size: 1.5em;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .myslide1 {
+        background: url(../images/burger-alone.jpg);
+        background-size: $slideBackgroundSize;
+        background-position: center;
+        $customPadding: 45px;
+
+        .slide-heading {
+            text-align: left;
+            width: 50%;
+            padding-left: $customPadding;
+            text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6);
+        }
+
+        .slide-subheading {
+            text-align: left;
+            width: 50%;
+            padding-left: $customPadding;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+            // font-family: $bodyFont;
+        }
+    }
+
+    .myslide2 {
+        background: url(../images/man-holding-burger.jpg);
+        background-size: $slideBackgroundSize;
+        background-position: 0% 70%;
+
+        .slide-heading {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            font-weight: bold;
+            // color: #ffd876e6;
+            color: #ffd876ed;
+            letter-spacing: 1px;
+            text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6);
+        }
+
+        .slide-subheading {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+
+
+        }
+    }
+
+    .myslide3 {
+        background: url(../images/kids-meal.jpg);
+        background-size: $slideBackgroundSize;
+        background-position: center;
+
+        .slide-heading {
+            float: right;
+            width: 75%;
+            text-align: left;
+            text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.6);
+        }
+
+        .slide-subheading {
+            float: right;
+            width: 75%;
+            text-align: left;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+
+        }
+    }
+}
+
+.mydescription {
+    display: flex;
+    flex-direction: row;
+
+    .mycontainer {
+        padding-left: 2px;
+
+        .myicon {
+            padding-bottom: 5px;
+            width: 30%;
+            margin: auto;
+
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+.text-area {
+    border-top: 2px #f1a536 solid;
+    font-family: $bodyFont;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.menu {
+    font-family: $textFont;
+    padding-top: 5%;
+
+}
+
+.container.menu {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+
+
+}
+
+.price {
+    text-align: center;
+}
+
+.col {
+    // margin-left: 10em;
+
+    h1 {
+        text-align: center;
+        color: #f1a536;
+    }
+
+}
+
+.menu {
+    margin: auto;
+
+}
+
+.fadeIn {
+    animation: .75s ease-in 0s 1 fadeIn;
+}
+
+.video {
+    font-size: 3em;
+    color: #f1a536;
     width: 100%;
-    height: 100%;
 
-
-    .top {
-        width: $myWidth;
-        background-color: $myBackgroundColor;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: auto;
-
-        .logo {
-            display: flex;
-            // background-image: url('../images/rockeyburgers02-logo.png');
-            // background-size: cover;
-        }
-
-
-
-        .topnav {
-            display: flex;
-            flex-flow: row;
-
-            .navlist {}
-        }
-
+    p {
+        font-size: .2em;
     }
 
-    .center {
-        height: 50%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    iframe {
+        width: inherit;
         margin: auto;
+    }
+}
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
 
-        .imagetext {
-            height: 100%;
-            color: rgba($color: #ffffff, $alpha: .750);
-            font-size: 4em;
-
+footer {
+    .container {
+        background-color: #f1a536;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        p{
+            display: inline;
+            font-family: $textFont;
         }
     }
-
-
-
 }
 
-.center {
-    width: $myWidth;
-    background-color: $myBackgroundColor;
-}
 
-.bottom {
-    width: $myWidth;
-    background-color: $myBackgroundColor;
-}
 
-.parallax {
-    @include myParallax('../images/burger-hero.jpg', 80%);
-}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
 
-// .parallax{
-//     background-image: url('../images/burger-hero.jpg');
-//     width: 80%;
-// }
+    100% {
+        opacity: 1;
+    }
+}
