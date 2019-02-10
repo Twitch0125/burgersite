@@ -14,7 +14,10 @@ body {
 .mylogo {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
+  .mylogo img {
+    max-width: 99.99%; }
 
 ul {
   font-family: "Arvo", serif; }
